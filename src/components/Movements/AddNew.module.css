@@ -1,0 +1,72 @@
+.btn {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: #4f005f;
+  border: 1px solid #4f005f;
+  transition: all 0.2s;
+  color: white;
+  cursor: pointer;
+}
+
+.btnExpand {
+  margin: 1rem 2rem 0 2rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #9800b6;
+  border: 1px solid #9800b6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem;
+  font-size: 2rem;
+}
+
+.form > * {
+  display: block;
+}
+
+.formControl {
+  margin-bottom: 4rem;
+  height: 8rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  outline: 1px solid transparent;
+  border: 2px solid #4f005f;
+  margin-top: 1rem;
+}
+
+.input:focus {
+  border: 2px solid #f5b10e;
+  outline: 1px solid #f5b10e;
+}
+
+.form button {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background-color: #4f005f;
+  border: 1px solid #4f005f;
+  transition: all 0.2s;
+  color: white;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active {
+  background-color: #9800b6;
+  border: 1px solid #9800b6;
+}
+
+.error {
+  color: orangered;
+}

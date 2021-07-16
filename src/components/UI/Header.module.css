@@ -1,0 +1,30 @@
+.header {
+  width: 100%;
+  height: 9rem;
+  padding: 2rem;
+  background-color: #4f005f;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.logoutBtn {
+  position: absolute;
+  right: 10%;
+  bottom: 50%;
+  transform: translateY(50%);
+  padding: 1rem 2.5rem;
+  font-size: 2rem;
+  background-color: #ffe500;
+  border: 1px solid #ffe500;
+  transition: all 0.2s;
+  border-radius: 20px;
+  color: #4f005f;
+  cursor: pointer;
+}
+
+.logoutBtn:hover,
+.logoutBtn:active {
+  background-color: #ffbb00;
+  border: 1px solid #ffbb00;
+}
