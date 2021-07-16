@@ -35,6 +35,19 @@
   height: 8rem;
 }
 
+.radioBtn {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.radioBtn input {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
 .input {
   width: 100%;
   padding: 1rem;
