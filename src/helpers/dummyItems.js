@@ -1,6 +1,6 @@
 const dummyItems = [
   {
-    id: 4,
+    id: Math.random(),
     type: 'expense',
     amount: 200,
     title: 'medicine',
@@ -8,7 +8,7 @@ const dummyItems = [
     date: '17/07/2021',
   },
   {
-    id: 3,
+    id: Math.random(),
     type: 'income',
     amount: 2300,
     title: 'june salary',
@@ -16,7 +16,7 @@ const dummyItems = [
     date: '10/07/2021',
   },
   {
-    id: 2,
+    id: Math.random(),
     type: 'expense',
     amount: 20,
     title: 'cinema',
@@ -24,7 +24,7 @@ const dummyItems = [
     date: '01/07/2021',
   },
   {
-    id: 1,
+    id: Math.random(),
     type: 'income',
     amount: 50,
     title: 'birthday',

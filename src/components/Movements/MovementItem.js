@@ -1,3 +1,6 @@
+import { useDispatch } from 'react-redux';
+import { movementsActions } from '../../store/index';
+
 import classes from './MovementItem.module.css';
 import Card from '../UI/Card';
 import {
@@ -34,9 +37,19 @@ const MovementItem = props => {
   if (props.category === 'transport') icon = <AiOutlineCar size={30} />;
   if (props.category === 'shopping') icon = <AiOutlineShoppingCart size={30} />;
 
+  const dispatch = useDispatch();
+
+  const handleDelete = () => {
+    dispatch(movementsActions.delete(props.id));
+  };
+
   return (
     <Card className={`${classes.expenseCard}`}>
-      <button type='button' className={classes.deleteBtn}>
+      <button
+        onClick={handleDelete}
+        type='button'
+        className={classes.deleteBtn}
+      >
         x
       </button>
       <p className={classes.title}>

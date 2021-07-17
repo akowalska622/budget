@@ -12,8 +12,9 @@ const movementsSlice = createSlice({
     add(state, action) {
       state.movements = [action.payload, ...state.movements];
     },
-    delete(state) {
-      //delete logic
+    delete(state, action) {
+      const id = action.payload;
+      state.movements = state.movements.filter(mov => mov.id !== id);
     },
   },
 });

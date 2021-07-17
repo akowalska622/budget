@@ -26,6 +26,7 @@ const MovementsList = props => {
       <div className={classes.movementsDetails}>
         {filteredMovements.map(item => (
           <MovementItem
+            id={item.id}
             key={item.id}
             type={item.type}
             amount={item.amount}
