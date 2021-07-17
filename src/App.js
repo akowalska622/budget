@@ -6,7 +6,6 @@ import LoginForm from './components/LoginForm/LoginForm';
 
 export default function App() {
   const isLoggedIn = useSelector(state => state.auth.isAuthenticated);
-
   return (
     <div className='App'>
       <Header />

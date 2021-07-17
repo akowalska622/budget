@@ -5,7 +5,7 @@ import { GiReceiveMoney, GiPayMoney } from 'react-icons/gi';
 
 const dummyItems = [
   {
-    id: 1,
+    id: 4,
     type: 'expense',
     amount: 200,
     title: 'medicine',
@@ -13,7 +13,7 @@ const dummyItems = [
     date: '17/07/2021',
   },
   {
-    id: 2,
+    id: 3,
     type: 'income',
     amount: 2300,
     title: 'june salary',
@@ -21,7 +21,7 @@ const dummyItems = [
     date: '10/07/2021',
   },
   {
-    id: 3,
+    id: 2,
     type: 'expense',
     amount: 20,
     title: 'cinema',
@@ -29,7 +29,7 @@ const dummyItems = [
     date: '01/07/2021',
   },
   {
-    id: 4,
+    id: 1,
     type: 'income',
     amount: 50,
     title: 'birthday',
@@ -56,6 +56,7 @@ const MovementsList = props => {
       <div className={classes.movementsDetails}>
         {filteredMovements.map(item => (
           <MovementItem
+            key={item.id}
             type={item.type}
             amount={item.amount}
             title={item.title}

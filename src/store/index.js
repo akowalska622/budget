@@ -19,7 +19,10 @@ const movementsSlice = createSlice({
 });
 
 //AUTHORIZATION
-const initialAuthState = { isAuthenticated: false };
+
+const initialAuthState = {
+  isAuthenticated: false,
+};
 
 const authSlice = createSlice({
   name: 'auth',
@@ -33,6 +36,8 @@ const authSlice = createSlice({
     },
   },
 });
+
+//STORE CONFIGURATION
 
 const store = configureStore({
   reducer: {
