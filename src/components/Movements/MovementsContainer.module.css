@@ -4,55 +4,15 @@
   display: flex;
 }
 
-.addNewForm {
-  height: 100%;
-  flex: 1;
-  background-color: #1f1f1f;
-  display: flex;
-  flex-direction: column;
-  padding: 3rem 4rem;
-}
-
 .summary {
   height: 100%;
   flex: 3;
-  background-color: teal;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
-}
-
-.balance {
-  width: 100%;
-  height: 8rem;
-  background-color: aliceblue;
-  color: black;
 }
 
 .movementsSummary {
   height: 100%;
   display: flex;
-}
-
-.movementsList {
-  flex: 1;
-  border: 1px solid tomato;
-}
-
-.movementsTitle {
-  font-size: 2.5rem;
-  background-color: cornflowerblue;
-  padding: 1rem 1rem;
-}
-
-.movementsDetails {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.expenseCard {
-  color: black;
-  width: 30rem;
-  height: 15rem;
 }

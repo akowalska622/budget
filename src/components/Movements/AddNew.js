@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import classes from './AddNew.module.css';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
@@ -34,7 +34,7 @@ const AddNew = () => {
   };
 
   return (
-    <Fragment>
+    <div className={classes.addNewForm}>
       <button
         onClick={expandForm}
         className={`${classes.btn} ${classes.btnExpand}`}
@@ -90,6 +90,7 @@ const AddNew = () => {
                     <option value='savings'>Savings</option>
                     <option value='prize'>Prize</option>
                     <option value='trade'>Trade</option>
+                    <option value='other'>Other</option>
                   </Field>
                   <ErrorMessage
                     className={classes.error}
@@ -110,6 +111,7 @@ const AddNew = () => {
                     <option value='gifts'>Gifts</option>
                     <option value='transport'>Transport</option>
                     <option value='shopping'>Shopping</option>
+                    <option value='other'>Other</option>
                   </Field>
                   <ErrorMessage
                     className={classes.error}
@@ -129,7 +131,7 @@ const AddNew = () => {
           )}
         </Formik>
       )}
-    </Fragment>
+    </div>
   );
 };
 

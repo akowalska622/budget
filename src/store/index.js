@@ -1,5 +1,6 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 
+//MOVEMENTS
 const initialMovementsState = {
   movements: [],
 };
@@ -17,6 +18,7 @@ const movementsSlice = createSlice({
   },
 });
 
+//AUTHORIZATION
 const initialAuthState = { isAuthenticated: false };
 
 const authSlice = createSlice({

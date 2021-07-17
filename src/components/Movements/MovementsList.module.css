@@ -1,0 +1,28 @@
+.movementsList {
+  flex: 1;
+}
+/* .movementsList:first-child {
+  border-right: 2px solid #acacac;
+} */
+.movementsTitle {
+  font-size: 3rem;
+  background-color: #1f1f1f;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.movementsDetails {
+  padding: 2rem 0;
+  height: 50rem;
+  overflow-y: auto;
+}
+
+.expenseCard {
+  margin: 0 auto;
+  color: black;
+  width: 35rem;
+  height: 15rem;
+  min-height: min-content;
+  margin-bottom: 2.5rem;
+}

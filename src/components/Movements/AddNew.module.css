@@ -1,3 +1,12 @@
+.addNewForm {
+  height: 100%;
+  flex: 1;
+  background-color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 4rem;
+}
+
 .btn {
   border-radius: 10px;
   padding: 1rem 2rem;
