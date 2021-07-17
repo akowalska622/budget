@@ -7,6 +7,8 @@
   transition: all 0.2s;
   color: white;
   cursor: pointer;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .button:hover,

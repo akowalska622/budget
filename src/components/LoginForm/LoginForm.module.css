@@ -19,7 +19,6 @@
 }
 
 .input {
-  box-sizing: content-box;
   width: 100%;
   padding: 1rem;
   font-size: 1.6rem;
@@ -46,7 +45,6 @@
 }
 
 .form button:focus {
-  box-sizing: content-box;
   border: 4px solid #f5b10e;
   outline: none;
 }
