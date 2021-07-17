@@ -1,4 +1,3 @@
-//import { FaBeer } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
 import classes from './MovementsList.module.css';
 import MovementItem from './MovementItem';
@@ -6,6 +5,15 @@ import { GiReceiveMoney, GiPayMoney } from 'react-icons/gi';
 
 const MovementsList = props => {
   const movementsList = useSelector(state => state.movements.movements);
+  const sortedFromNewest = useSelector(
+    state => state.movements.sortedFromNewest
+  );
+
+  let filteredMovements = movementsList.filter(
+    item => item.type === props.type
+  );
+
+  if (!sortedFromNewest) filteredMovements = [...filteredMovements.reverse()];
 
   const icon =
     props.type === 'income' ? (
@@ -13,10 +21,6 @@ const MovementsList = props => {
     ) : (
       <GiPayMoney color={'tomato'} size={35} />
     );
-
-  const filteredMovements = movementsList.filter(
-    item => item.type === props.type
-  );
 
   return (
     <div className={classes.movementsList}>

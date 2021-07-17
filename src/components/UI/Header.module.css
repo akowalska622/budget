@@ -4,8 +4,15 @@
   padding: 2rem;
   background-color: #4f005f;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header h2 {
+  margin-left: 14rem;
+  font-size: 3.5rem;
 }
 
 .logoutBtn {
@@ -27,4 +34,14 @@
 .logoutBtn:active {
   background-color: #ffbb00;
   border: 1px solid #ffbb00;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
 }

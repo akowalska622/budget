@@ -1,10 +1,16 @@
 .balance {
-  width: 100%;
+  margin: 2rem auto;
+  width: 85%;
   height: 8rem;
   background-color: #1f1f1f;
   color: whitesmoke;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 3.3rem;
+}
+
+.sort {
+  font-size: 2rem;
+  cursor: pointer;
 }

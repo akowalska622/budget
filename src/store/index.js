@@ -3,6 +3,7 @@ import dummyItems from '../helpers/dummyItems';
 
 const initialMovementsState = {
   movements: dummyItems,
+  sortedFromNewest: true,
 };
 
 const movementsSlice = createSlice({
@@ -15,6 +16,9 @@ const movementsSlice = createSlice({
     delete(state, action) {
       const id = action.payload;
       state.movements = state.movements.filter(mov => mov.id !== id);
+    },
+    changeSorting(state) {
+      state.sortedFromNewest = !state.sortedFromNewest;
     },
   },
 });

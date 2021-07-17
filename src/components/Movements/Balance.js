@@ -1,8 +1,15 @@
 import classes from './Balance.module.css';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { movementsActions } from '../../store/index';
 
 const Balance = () => {
+  const dispatch = useDispatch();
+
   const movements = useSelector(state => state.movements.movements);
+  const sortedFromNewest = useSelector(
+    state => state.movements.sortedFromNewest
+  );
+
   const incomes = movements
     .filter(mov => mov.type === 'income')
     .map(mov => mov.amount);
@@ -17,13 +24,23 @@ const Balance = () => {
 
   const colouring = balanceAmount > 0 ? 'green' : 'tomato';
 
+  const handleSorting = () => {
+    dispatch(movementsActions.changeSorting());
+  };
+
   return (
     <div className={classes.balance}>
-      Your current balance: &nbsp;
-      <span style={{ color: colouring }}>
+      <div>
         {' '}
-        {balanceAmount < 0 && '- '}${Math.abs(balanceAmount)}
-      </span>
+        Your current balance: &nbsp;
+        <span style={{ color: colouring }}>
+          {' '}
+          {balanceAmount < 0 && '- '}${Math.abs(balanceAmount)}
+        </span>
+      </div>
+      <div onClick={handleSorting} className={classes.sort}>
+        Sort from {sortedFromNewest ? 'oldest' : 'newest'}
+      </div>
     </div>
   );
 };

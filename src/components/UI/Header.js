@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { authActions } from '../../store/index';
+import { GiReceiveMoney, GiPayMoney } from 'react-icons/gi';
 
 import classes from './Header.module.css';
 
@@ -14,7 +15,11 @@ const Header = () => {
 
   return (
     <header className={classes.header}>
-      <h1>Your Budget</h1>
+      <div className={classes.logo}>
+        <GiPayMoney />
+        <GiReceiveMoney />
+      </div>
+      <h2>BudgetApp</h2>
       {isLoggedIn && (
         <button className={classes.logoutBtn} onClick={handleLogout}>
           Logout
