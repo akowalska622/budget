@@ -5,6 +5,7 @@ import MovementsContainer from './components/Movements/MovementsContainer';
 import LoginForm from './components/LoginForm/LoginForm';
 
 export default function App() {
+  // console.log(useSelector(state => state.auth.isAuthenticated));
   const isLoggedIn = useSelector(state => state.auth.isAuthenticated);
   return (
     <div className='App'>
