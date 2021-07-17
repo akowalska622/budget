@@ -36,6 +36,9 @@ const MovementItem = props => {
 
   return (
     <Card className={`${classes.expenseCard}`}>
+      <button type='button' className={classes.deleteBtn}>
+        x
+      </button>
       <p className={classes.title}>
         {props.title[0].toUpperCase()}
         {props.title.slice(1)}

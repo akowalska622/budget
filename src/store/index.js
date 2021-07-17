@@ -1,7 +1,6 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
 import dummyItems from '../helpers/dummyItems';
 
-//MOVEMENTS (doesn't work yet)
 const initialMovementsState = {
   movements: dummyItems,
 };
