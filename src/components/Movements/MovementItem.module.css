@@ -1,0 +1,28 @@
+.expenseCard {
+  margin: 0 auto;
+  color: black;
+  width: 35rem;
+  min-height: min-content;
+  margin-bottom: 2.5rem;
+  color: #1f1f1f;
+  padding: 1.5rem;
+  font-size: 2.2rem;
+}
+
+.expenseCard > * {
+  margin: 0.7rem;
+}
+
+.title {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+}
+
+.expenseCard span {
+  margin-left: 1rem;
+}
