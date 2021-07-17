@@ -1,25 +1,25 @@
 import { createSlice, configureStore } from '@reduxjs/toolkit';
+import dummyItems from '../helpers/dummyItems';
 
-//MOVEMENTS
+//MOVEMENTS (doesn't work yet)
 const initialMovementsState = {
-  movements: [],
+  movements: dummyItems,
 };
 
 const movementsSlice = createSlice({
   name: 'movements',
   initialState: initialMovementsState,
   reducers: {
-    add(state) {
-      state.movements.push(1);
+    add(state, action) {
+      state.movements = [action.payload, ...state.movements];
     },
-    decrement(state) {
-      state.movements.push(-1);
+    delete(state) {
+      //delete logic
     },
   },
 });
 
 //AUTHORIZATION
-
 const initialAuthState = {
   isAuthenticated: false,
 };
