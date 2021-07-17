@@ -1,14 +1,14 @@
 //import { FaBeer } from 'react-icons/fa';
 import classes from './MovementsList.module.css';
 import MovementItem from './MovementItem';
-import { FiArrowUpRight, FiArrowDownRight } from 'react-icons/fi';
+import { GiReceiveMoney, GiPayMoney } from 'react-icons/gi';
 
 const dummyItems = [
   {
     id: 1,
     type: 'expense',
     amount: 200,
-    title: 'medicines',
+    title: 'medicine',
     category: 'health',
     date: '17/07/2021',
   },
@@ -41,16 +41,12 @@ const dummyItems = [
 const MovementsList = props => {
   const icon =
     props.type === 'income' ? (
-      <FiArrowUpRight color={'green'} size={35} />
+      <GiReceiveMoney color={'green'} size={35} />
     ) : (
-      <FiArrowDownRight color={'tomato'} size={35} />
+      <GiPayMoney color={'tomato'} size={35} />
     );
 
-  let filteredMovements;
-  if (props.type === 'income')
-    filteredMovements = dummyItems.filter(item => item.type === 'income');
-  if (props.type === 'expense')
-    filteredMovements = dummyItems.filter(item => item.type === 'expense');
+  const filteredMovements = dummyItems.filter(item => item.type === props.type);
 
   return (
     <div className={classes.movementsList}>
