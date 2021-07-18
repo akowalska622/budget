@@ -21,8 +21,9 @@ const LoginForm = () => {
       .required('Password required'),
   });
 
-  const handleSubmit = () => {
-    dispatch(authActions.login());
+  const handleSubmit = values => {
+    const username = values.username;
+    dispatch(authActions.login(username));
   };
 
   return (
