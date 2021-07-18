@@ -31,6 +31,22 @@ const dummyItems = [
     category: 'gift',
     date: '03/07/2021',
   },
+  {
+    id: Math.random(),
+    type: 'income',
+    amount: 1000,
+    title: 'prize',
+    category: 'prize',
+    date: '15/07/2021',
+  },
+  {
+    id: Math.random(),
+    type: 'expense',
+    amount: 40,
+    title: "Dog's food",
+    category: 'food',
+    date: '14/07/2021',
+  },
 ];
 
 export default dummyItems;
