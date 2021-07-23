@@ -2,7 +2,7 @@
   "name": "budget",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://akowalska622.github.io/budget/",
+  "homepage": "https://budget-app-c66a6.web.app/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
     "@testing-library/jest-dom": "^5.14.1",
