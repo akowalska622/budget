@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# The Budget App
+## React.js + Redux app to manage your budget
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo app: https://budget-app-c66a6.firebaseapp.com/
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+**Colors Game** is a browser app to help you manage you budget. It was implemented in **React** with help of **Redux** and local storage.
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- You can log in with any credentials, login page is created only to validate form fields and to use conditional rendering. You're not being authenticated. At least 1 character is needed.
+- You can add your expenses or incomes with a neat form which is created with Formik and validated with Yup.
+- Your expenses and/or incomes are automatically added to the matching column. Your balance is being updated every time you change change something in your account.
+- Your session is saved in local storage with help of Redux.
+- Each category of spendings/incomes has its own icon.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## About the project
 
-### `npm test`
+The project was developed as training of Redux, local storage while using Redux, conditional rendering, sorting third-party data, using and validating form, using Formik and Yup.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The styling approach that I chose for this project is **CSS modules** in React. It helps to encapsulate styling for a particular component while having your styling in separated file, not withing .js file.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Future scope
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Responsive layout, as for now it's only desktop mode.
+- Refactoring to minimize repetitions.
+- Using real authentication (eg. with Firebase) and external data (MongoDB our fetching from Firebase).
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Project setup
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Requirements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+You’ll need to have **Node >= 10** on your local development machine.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### How to run the project in development mode
 
-## Learn More
+First, you have to install the dependencies. You can do that by going to the root folder of the project and typing:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+in the terminal.
 
-### Code Splitting
+To run the project in development mode, type:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    npm start
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+in the project directory.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You can see the Redux store and actions dispatched in the console of Developer tools of your browser.
