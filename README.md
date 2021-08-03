@@ -5,7 +5,7 @@ Demo app: https://budget-app-c66a6.firebaseapp.com/
 
 ## Description
 
-**Colors Game** is a browser app to help you manage you budget. It was implemented in **React** with help of **Redux** and local storage.
+**Budget app** is a browser app to help you manage you budget. It was implemented in **React** with help of **Redux** and local storage.
 
 ### Features
 
